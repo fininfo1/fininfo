@@ -1,0 +1,380 @@
+*
+{
+	margin: 0;
+	padding: 0;
+
+}
+body
+{
+font-family: sans-serif;
+}
+
+.logo
+{
+  width: 50%;
+  height: 90px;
+}
+.logo h1
+{
+line-height: 90px;
+ padding-left: 70px;
+ color: #fff ;
+}
+#nav-bar
+{
+position: sticky;
+top: 0;
+z-index: 10;
+}
+/*-----------devide the menu  -------------*/
+.navbar
+{
+background-image: linear-gradient(to right,#1E4D92, #00C6A7 );
+padding: 0 ! important;
+clip-path: polygon(0% 0%, 100% 0%, 100% 80%, 0% 100%);
+
+}
+/*-----------devide the menu  -------------*/
+.navbar-brand img
+{
+height: 40px;
+padding-left: 20px;
+}
+.navbar-nav li
+{
+padding: 0 10px;
+}
+.navbar-nav li a
+{
+color: #fff !important;
+font-weight: 600;
+float:right;
+text-align:left;
+}
+.navbar-toggler
+{
+outline: none !important;
+}
+/*-----------start welcome -------------*/
+
+section{ display: flex;  }
+
+/*-----------end welcome -------------*/
+/*-----------start change color -------------*/
+
+.colorchange{
+    animation:  colorchangeFIN 1s infinite;
+}
+
+/*-----------end change color -------------*/
+@keyframes colorchangeFIN{
+    0%{color:red;}
+    25%{color:yellow; ;}
+    50%{ color:white; }
+    100%{ color:orange;  }
+}
+/*-----------BANNER-------------*/
+#banner
+{
+	background-image: linear-gradient(to right,#1E4D92, #00C6A7 );
+	color:white;
+	padding-top: 5%;
+}
+.promo-title
+{
+font-size: 40px;
+font-weight: 600;
+margin-top: 100px;
+}
+.play-btn
+{ width: 60px;
+	margin: 20px;
+
+}
+#banner a
+{color: #fff;
+	text-decoration: none;
+}
+.bottom-img
+{
+	width: 100%;
+}
+
+
+/*-----------start effect -------------*/
+
+.navbar-nav li a
+{
+    position: relative;
+    width: 100%;
+    display: block;
+    text-align: center;
+    color: #FFFFFF;
+    text-decoration: none;
+    font-weight: bold;
+    text-transform: uppercase;
+
+}
+
+.navbar-nav li a::before
+{
+    content:'';
+    position: absolute;
+    top: 0%;
+    right:0%;
+    background-color: #FF9933;
+    height: 2px;
+    width: 0%;
+    transition: 0.2s all;
+}
+
+.navbar-nav li a:hover::before
+{
+    width: 100%;
+    right: 0%;
+    transition: 1s all;
+}
+
+.navbar-nav li a::after
+{
+    content:'';
+    position: absolute;
+    bottom: 0%;
+    left:0%;
+    background-color: #138808;
+    height: 2px;
+    width: 0%;
+    transition: 0.3s all;
+}
+
+.navbar-nav li a:hover::after
+{
+    width: 100%;
+    right: 0%;
+    transition: 1s all;
+}
+/*-----------end effect -------------*/
+/*-----------services section--------------*/
+
+#services
+{
+    padding: 80px 0;
+}
+.service-img
+{
+    width: 100px;
+    margin-top: 20px;
+}
+.services
+{
+    padding: 20px;
+}
+.services h4
+{
+    padding: 5px;
+    margin-top: 25px;
+    text-transform: uppercase; 
+}
+
+
+/*-----------services section--------------*/
+.title::before
+{
+    content: '';
+    background:  #0099cc;
+    height: 5px;
+    width: 200px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    transform: translateY(63px);    
+}
+.title::after
+{
+    content: '';
+    background: #cc9900;
+    height: 10px;
+    width: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 40px;
+    display: block;
+    transform: translateY(8px);    
+}
+#services .btn-primary
+{
+    box-shadow: none;
+    padding: 8px 25px;
+    border: none;
+    border-radius: 20px;
+    background-image: linear-gradient(to left, #a517ba,gold);
+}
+
+/*---------------about-us section--------------*/
+
+#about-us
+{
+    background: #f8f9fa;
+    padding-bottom: 50px;
+    padding-top: 50px;
+}
+.about-title
+{
+    font-size: 40px;
+    font-weight: 600;
+    margin-top: 8%;
+}
+#about-us ul li
+{
+    margin: 10px 0;
+}
+
+#about-us ul
+{
+    margin-left: 20px;
+}
+
+/*--------------testimonials SECTION--------------*/
+
+#testimonials
+{
+    margin: 100px 0;
+    
+}
+.testimonials
+{
+    border-left: 4px solid #FFDF00;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+.testimonials img
+{
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+    margin: 0 10px;
+}
+.user-details
+{
+    display: inline-block;
+    font-size: 17px;
+}
+
+/*----------social-media section-----------*/
+
+#social-media
+{
+    background: #f8f9fa;
+    padding: 100px 0;
+}
+#social-media p
+{
+    font-size: 36px;
+    font-weight: 600;
+    margin-bottom: 30px;
+}
+.social-icons img
+{
+    width: 60px;
+    transition: 0.5s;
+}
+.social-icons a:hover img
+{
+    transform: translateY(-10px);
+}
+
+/*-----------------footer section---------------*/
+
+
+#footer
+{
+    background-image: linear-gradient(to right,#1E4D92, #00C6A7 );
+    color:white;
+    
+}
+.footer-img
+{
+    width: 100%;
+}
+.footer-box
+{
+    padding: 20px;
+}
+
+.footer-box img
+{ color: #255784;
+    background: #2196f3;
+    box-shadow: 0 0 10px #2196f3, 0 0 40px #2196f3, 0 0 80px #2196f3;
+    transition-delay: 1
+
+}
+.footer-box img
+{
+    width: 120px;
+    margin-bottom: 20px;
+}
+.footer-box .fa
+{
+    margin-right: 8px;
+    font-size: 25px;.footer-box
+{
+    padding: 20px;
+}
+    height: 40px;
+    width: 40px;
+    text-align: center;
+    padding-top: 7px;
+    border-radius: 2px;
+    background-image: linear-gradient(to right, #a517ba,gold);
+}
+.footer-box .form-control
+{
+    box-shadow: none !important;
+    border: none;
+    border-radius: 0;
+    margin-top: 25px;
+    max-width: 250px;
+}
+.footer-box .btn-primary
+{
+    box-shadow: none !important;
+    border: none;
+    border-radius: 0;
+    margin-top: 30px;
+    background-image: linear-gradient(to right, #a517ba,green);
+}
+
+hr
+{
+    background-color: #fff;
+}
+.copyright
+{
+    margin-bottom: 0;
+    padding-bottom: 20px;
+    text-align: center;
+}
+
+
+.copyright a{
+    color: #ffed00;
+}
+
+/*-----------------start scroll section---------------*/
+::-webkit-scrollbar {
+  width: 9px;
+}
+
+::-webkit-scrollbar-thumb
+{
+    background: linear-gradient(transparent,#FF1493,#00FFFF);
+    border-radius:5px;
+
+}
+::-webkit-scrollbar-thumb:hover
+{
+     background: linear-gradient(transparent,#FFFF00);
+}
+/*-----------------end scroll section---------------*/
+
+
